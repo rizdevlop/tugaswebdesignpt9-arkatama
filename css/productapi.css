@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #09001d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.navbar a {
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.main {
+    min-height: 100vh;
+    background: url(../assets/images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.layanan {
+    height: 100vh;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+.layanan-content {
+    height: 100vh;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+.layanan-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.service h2 {
+    color: #fff;
+    font-size: 75px;
+    width: 1130px;
+    text-align: center;
+    margin: auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+
+/* Style CSS untuk footer */
+.footer {
+    background-color: #09001d;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    flex: 1 0 300px;
+    margin: 0 20px;
+}
+
+.footer-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.social-media-icons img:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Tata letak untuk desktop */
+@media only screen and (min-width: 1024px) {
+    .layanan {
+        padding: 50px;
+        padding-top: 100px;
+    }
+    .layanan-content {
+        padding: 50px;
+        padding-top: 100px;
+    }
+    .box {
+        min-height: 400px;
+    }
+    .card {
+        width: 335px;
+        height: 365px;
+        padding: 20px 35px;
+        margin: 15px;
+    }
+}
+
+/* Tata letak untuk tablet */
+@media only screen and (max-width: 1023px) {
+    .main{
+        min-height: 200vh;
+    }
+    .layanan {
+        padding: 30px;
+        padding-top: 80px;
+    }
+    .layanan-content {
+        padding: 30px;
+        padding-top: 80px;
+    }
+    .box {
+        min-height: 300px;
+        flex-direction: column;
+    }
+    .card {
+        width: 250px;
+        height: 300px;
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+/* Tata letak untuk smartphone */
+@media only screen and (max-width: 767px) {
+    .main{
+        min-height: 200vh;
+    }
+    .layanan {
+        padding: 20px;
+        padding-top: 60px;
+    }
+    .layanan-content {
+        padding: 20px;
+        padding-top: 60px;
+    }
+    .box {
+        min-height: auto;
+        flex-direction: column;
+    }
+    .card {
+        width: 250px;
+        height: 300px;
+        padding: 15px;
+        margin: 10px;
+    }
+}
